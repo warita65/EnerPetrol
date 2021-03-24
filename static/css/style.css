@@ -1,0 +1,9 @@
+/* Main CSS Styles */
+
+:root{
+    --text:#ffffff;
+    --text2: #000000;
+    --muted: #e5e5e5;
+    --primary: #fca311;
+    --background: #14213d;
+}
