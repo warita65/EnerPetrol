@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block vendor %}
+<link rel="stylesheet" href="{% static 'css/app/contact.css' %}" type="text/css" media="screen">
+{% endblock %}
+{% block content %}
+<div id="contact">
+    <div class="container">
+        <h2 class="text-center display-1">Contact</h2>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
