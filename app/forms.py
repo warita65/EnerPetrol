@@ -1,9 +1,7 @@
 from django import forms
-from app.models import FeedbackContacts
+from app.models import FeedbackContact
 
-
-class FeedbackContactsForm(forms.ModelForm):
-    
+class FeedbackContactForm(forms.ModelForm):    
     class Meta:
-        model = FeedbackContacts
+        model = FeedbackContact
         fields = ('full_name', 'email', 'phone_number', 'subject', 'message',)
