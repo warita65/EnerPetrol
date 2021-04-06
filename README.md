@@ -6,7 +6,7 @@ CEO: Michael Claros
 <h1> Setup </h1>
 
 <h3>Prerequisite</h3>
-<br></br>
+
 - Python Version 3.9.1 ([Download](https://www.python.org/downloads/))
 - Git Bash - Windows ([Download](https://git-scm.com/downloads)) 
 
