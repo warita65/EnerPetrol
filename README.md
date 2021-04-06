@@ -10,7 +10,7 @@ CEO: Michael Claros
 - Python Version 3.9.1 ([Download](https://www.python.org/downloads/))
 - Git Bash - Windows ([Download](https://git-scm.com/downloads)) 
 
-<h1>Enviroment setup</h1>
+### Environment Setup
 1. Install Virtualenv `pip install virtualenv`.
 2. Verify python version is 3.9.1 `python --version`.
 4. Clone this repository to your desired destination 'git clone https://github.com/warita65/EnerPetrol.git'.
