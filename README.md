@@ -4,7 +4,7 @@ CEO: Michael Claros
 - Enerpetrol is a informational and advertising website for EnerPetrol
 
 <h1> Setup </h1>
-<br></br>
+
 <h3>Prerequisite</h3>
 <br></br>
 - Python Version 3.9.1 ([Download](https://www.python.org/downloads/))
