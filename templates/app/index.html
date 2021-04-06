@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Home{% endblock %}
+{% block title %}Home {% endblock %}
+
+{% block vendor %}
+<link rel="stylesheet" href="{% static 'css/app/index.css' %}" type="text/css" media="screen">
+{% endblock %}
+<!-- Navbar -->
 
 {% block content %}
+{% include "app/partials/navbar.html" %}
 <div id="home">
     <div class="container">
-        <h2 class="text-center display-1">Home</h2>
+        <h2 class="text-center display-1">Home1</h2>
     </div>
 </div>
 {% endblock %}
