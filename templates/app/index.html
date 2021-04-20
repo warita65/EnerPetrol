@@ -4,14 +4,34 @@
 
 {% block vendor %}
 <link rel="stylesheet" href="{% static 'css/app/index.css' %}" type="text/css" media="screen">
+<script type="text/javascript" src="{% static 'js/app/index.js' %}"></script>
 {% endblock %}
 <!-- Navbar -->
 
 {% block content %}
+
 {% include "app/partials/navbar.html" %}
+
 <div id="home">
-    <div class="container">
+  <div class="container">
         <h2 class="text-center display-1">Home1</h2>
+  </div>
+
+  <div class="carousel slide carousel-fade" data-bs-pause="false" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="{% static 'assets/carousel/home/slide0.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      {% for n in numIMG %}
+      {% with n|stringformat:"s" as imgID %}
+      {% with 'assets/carousel/home/slide'|add:imgID|add:'.jpg' as slideIMG %}
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="{% static slideIMG %}" class="d-block w-100" alt="...">
+      </div>
+      {% endwith %}
+      {% endwith %}
+      {% endfor %}
     </div>
+  </div>
 </div>
 {% endblock %}
