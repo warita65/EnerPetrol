@@ -4,7 +4,7 @@ from app.forms import FeedbackContactForm
 from django.urls import reverse
 # Create your views here.
 def index(request):
-    return render(request, "app/index.html")
+    return render(request, "app/index.html", {'numIMG' : range(1,13)})
 
 def about(request):
     return render(request, "app/index.html")
